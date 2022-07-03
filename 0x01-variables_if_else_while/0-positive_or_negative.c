@@ -6,6 +6,10 @@
 
 /* betty style doc for function main goes there*/
 
+/**
+ * main - prints random number and prints if they are positi, negative or zero
+ */
+
 int main(void)
 {
 	int n;
