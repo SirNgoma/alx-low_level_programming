@@ -2,6 +2,5 @@
 
 int main(void)
 {
-    printf("Hallo Assembler");
     return(0);
 }
