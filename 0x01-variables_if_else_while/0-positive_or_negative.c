@@ -8,7 +8,9 @@
 
 /**
  * main - prints random number and prints if they are positi, negative or zero
- */
+ *
+ * Return - positive if the number is positive. negative if the number is negative. zero if the number is zero
+ * /
 
 int main(void)
 {
