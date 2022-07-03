@@ -9,7 +9,7 @@
 /**
  * main - prints random number and prints if they are positi, negative or zero
  *
- * Return - positive if the n is +.
+ * Return: Positive if the n is +.
  * negative if the n is -. zero if the n is zero
  */
 
