@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	printsalpha();
+	print_alphabet();
 
 	return (0);
 }
