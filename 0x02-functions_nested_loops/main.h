@@ -4,5 +4,6 @@
 int _putchar(char c);
 void myf(void);
 void printshit(void);
+void print_alphabet(void);
 
 #endif
