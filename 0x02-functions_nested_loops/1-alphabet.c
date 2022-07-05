@@ -1,13 +1,19 @@
 #include "main.h"
 
 /**
- * main - call othrrss
- * Return: answer
+ * print_alphabet - prints alphanets
+ * Return: rrtruns letter
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-
+	int ch;
+	
+	for (ch=97 ; ch<=122 ; ch++)
+	{
+		_putchar('%d',ch);
+	}
+	_putchar('\n');
 	return (0);
+
 }
