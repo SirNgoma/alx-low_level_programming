@@ -11,7 +11,7 @@ int main(void)
 {
 	int base;
 	char alph;
-	
+
 	for (base = 48; base <= 57; base++)
 	{
 		putchar(base);
