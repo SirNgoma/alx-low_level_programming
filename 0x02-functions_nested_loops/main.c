@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	printshit();
+	myf();
 
 	return (0);
 }

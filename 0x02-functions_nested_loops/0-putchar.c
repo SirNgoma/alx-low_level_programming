@@ -5,10 +5,12 @@
  * Return: return chr
  */
 
-int main(void)
+void myf(void)
 {
-	
-	myf();
-	
-	return (0);
+	_putchar('H');
+	_putchar('a');
+	_putchar('l');
+	_putchar('l');
+	_putchar('o');
+	_putchar('\n');
 }
