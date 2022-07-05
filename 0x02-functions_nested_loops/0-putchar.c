@@ -4,7 +4,6 @@
  * main - using putchar
  * Return: return chr
  */
-void myf(void);
 
 int main(void)
 {
