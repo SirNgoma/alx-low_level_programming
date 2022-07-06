@@ -3,7 +3,7 @@
 /**
  * _abs -  abs main
  *
- * @i - input
+ * @i inputd all
  * @r - resulr
  * Return: abs of a number
  */
