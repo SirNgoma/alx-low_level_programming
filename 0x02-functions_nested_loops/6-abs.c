@@ -8,6 +8,7 @@
  * Return: abs of a number
  */
 
+/*@i int i*/
 int _abs(int i)
 {
 	int r;
