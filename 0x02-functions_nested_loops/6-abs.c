@@ -3,6 +3,8 @@
 /**
  * _abs -  abs main
  *
+ * @i - input
+ * @r - resulr
  * Return: abs of a number
  */
 
@@ -10,18 +12,18 @@ int _abs(int i)
 {
 	int r;
 
-	if (i<0)
+	if (i < 0)
 	{
 		r = i * -1;
-		return r;
+		return (r);
 	}
-	else if (i>0)
+	else if (i > 0)
 	{
 		r = i * 1;
-		return r;
+		return (r);
 	}
 	else
 	{
-		return i;
+		return (i);
 	}
 }
