@@ -6,6 +6,6 @@ void myf(void);
 void printshit(void);
 void print_alphabet(void);
 void print_alphabet_x10(void);
-int add(int num1, num2);
+int add(int num1, int num2);
 
 #endif
