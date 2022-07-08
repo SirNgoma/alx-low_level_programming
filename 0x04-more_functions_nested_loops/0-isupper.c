@@ -17,4 +17,8 @@ int _isupper(int c)
 	{
 		return (0);
 	}
+	else
+	{
+		printf("its not a alphabe");
+	}
 }
