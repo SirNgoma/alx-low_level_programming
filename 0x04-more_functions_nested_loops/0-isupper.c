@@ -2,7 +2,19 @@
 #include <stdio.h>
 
 /**
- *  - check the code.
- * 
+ * _isupper  - check the code.
+ *@c: params 
  * Return: nothing
 */
+
+int _isupper(int c)
+{
+	if (c >= 65 && c <= 90)
+	{
+		return (1);
+	}
+	else if (c >= 97 && c <= 122)
+	{
+		return (0);
+	} 
+}
