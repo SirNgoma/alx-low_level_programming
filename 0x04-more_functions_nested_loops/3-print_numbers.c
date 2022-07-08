@@ -2,17 +2,17 @@
 
 /*
  * print_numbers - print numbets
- * 
+ *
  * Return: nothing
  */
 
-void print_numberd(void)
+void print_numbers(void)
 {
 	int i;
-	
-	for(i = 0 ; i <= 9 ; i++)
+
+	for (i = 0 ; i <= 9 ; i++)
 	{
-		_putchar('%d', i);
+		_putchar(i);
 	}
 	_putchar('\n');
 }
