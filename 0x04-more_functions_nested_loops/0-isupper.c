@@ -3,7 +3,7 @@
 
 /**
  * _isupper  - check the code.
- *@c: params 
+ *@c: param
  * Return: nothing
 */
 
