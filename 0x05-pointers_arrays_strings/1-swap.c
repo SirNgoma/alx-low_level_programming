@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
  * * swap_int - check the code
- * @*a: ffs vfg
-*@*b: hg gfd
+ * @a: ffs vfg
+*@b: hg gfd
  *
 * Return: Always 0.
  */
