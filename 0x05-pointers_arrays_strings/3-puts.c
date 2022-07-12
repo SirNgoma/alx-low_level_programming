@@ -7,7 +7,7 @@
  * Return: nothing
  */
 
-int _puts(char *s)
+void _puts(char *s)
 {
 	while (*s)
 	{
