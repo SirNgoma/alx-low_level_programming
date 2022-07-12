@@ -11,6 +11,6 @@ void _puts(char *s)
 {
 	while (*s)
 	{
-		printf("%c", *s++);
-	} 
+		printf("%c\n", *s++);
+	}
 }
