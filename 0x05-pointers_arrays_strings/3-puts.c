@@ -3,7 +3,7 @@
 
 /**
  * _puts - prints chars
- * @str: string to be prinyed
+ * @s: string to be prinyed
  * Return: nothing
  */
 
