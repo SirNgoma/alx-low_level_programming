@@ -6,14 +6,14 @@
  * @s: gg
  * Return: ff
  */
-int _strlen(char *s);
+int str_len(char *);
 
 void rev_string(char *s)
 {
 	int length, c;
 	char *begin, *end, temp;
 
-	length = _strlen(*s);
+	length = str_len(s);
 	begin  = s;
 	end    = s;
 
@@ -27,4 +27,14 @@ void rev_string(char *s)
 		begin++;
 		end--;
 	}
+}
+
+int str_len(char *pointer)
+{
+	   int c = 0;
+	    
+	      while( *(pointer + c) != '\0' )
+		            c++;
+	       
+	         return c;
 }
