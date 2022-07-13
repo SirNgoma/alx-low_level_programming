@@ -31,10 +31,9 @@ void rev_string(char *s)
 
 int str_len(char *pointer)
 {
-	   int c = 0;
-	    
-	      while( *(pointer + c) != '\0' )
-		            c++;
-	       
-	         return c;
+	int c = 0;
+
+	while (*(pointer + c) != '\0')
+		c++;
+	return (c);
 }
