@@ -2,9 +2,10 @@
 #include <stdio.h>
 
 /*
- * rev_string - hd
+ * rev_string - reverse string
  * @s: gg
  * Return: ff
+ *
  */
 int str_len(char *);
 
@@ -29,11 +30,17 @@ void rev_string(char *s)
 	}
 }
 
-int str_len(char *pointer)
+/**
+ * str_len - count string
+ * @p: pointer string
+ * Return: number
+ */
+
+int str_len(char *p)
 {
 	int c = 0;
 
-	while (*(pointer + c) != '\0')
+	while (*(p + c) != '\0')
 		c++;
 	return (c);
 }
