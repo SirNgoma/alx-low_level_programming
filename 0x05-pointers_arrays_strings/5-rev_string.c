@@ -3,7 +3,7 @@
 
 /**
  * rev_string - this reverse a  string
- * @s: gg
+ * @s: take a string to be reversed
  * Return: ff
  *
  */
