@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 
-/*
- * rev_string - reverse string
+/**
+ * rev_string - this reverse a  string
  * @s: gg
  * Return: ff
  *
