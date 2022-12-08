@@ -3,7 +3,7 @@
 /**
  * main - prints some words
  *
- * return 0
+ * return: always 0
  */
 
 int main(void)
