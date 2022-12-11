@@ -19,11 +19,21 @@
 int main(void)
 
 {
+	char letter = 'z';
 
-		
 
-		
 
-		return (0);
+		while (letter >= 'a')
+
+				{
+
+							putchar(letter);
+
+									letter--;
+
+										}
+
+			putchar('\n');
+	return (0);
 
 }

@@ -19,11 +19,21 @@
 int main(void)
 
 {
+	int num = 48;
 
-		
 
-		
 
-		return (0);
+		while (num <= 57)
+
+				{
+
+							putchar(num);
+
+									num++;
+
+										}
+
+			putchar('\n');
+	return (0);
 
 }
