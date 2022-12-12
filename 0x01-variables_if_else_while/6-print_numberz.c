@@ -1,39 +1,22 @@
 #include <stdio.h>
-
 #include <stdlib.h>
 
-#include <time.h>
-
-/
-
 /**
+ * main - numberz
  *
- *  * main -
+ * Return: Always 0 (Success)
  *
- *   *
- *
- *    * Return: Always 0 (Success)
- *
- *     */
+ **/
 
 int main(void)
-
 {
 	int num = 48;
 
-
-
-		while (num <= 57)
-
-				{
-
-							putchar(num);
-
-									num++;
-
-										}
-
-			putchar('\n');
+	while (num <= 57)
+	{
+		putchar(num);
+		num++;								}
+	putchar('\n');
 	return (0);
 
 }
