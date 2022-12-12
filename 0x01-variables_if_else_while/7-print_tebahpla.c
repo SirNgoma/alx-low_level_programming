@@ -1,11 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *
  * main - Letters Again
  *
  * Return: Always 0 (Success)
- *
  **/
 
 int main(void)
@@ -17,7 +15,7 @@ int main(void)
 		putchar(letter);
 		letter--;
 	}
-	
+
 	putchar('\n');
 	return (0);
 }
