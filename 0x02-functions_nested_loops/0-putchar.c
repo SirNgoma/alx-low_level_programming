@@ -6,10 +6,9 @@
  *
  * Return: zero
  **/
-
 int main(void)
 {
-	char putchar[] = "_putchar";
-	_putchar("%s",putchar);
+	_putchar('_');
+	_putchar('p');
 	return (0);
 }
