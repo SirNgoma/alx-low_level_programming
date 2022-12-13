@@ -1,15 +1,13 @@
-#include <sydio.h>
-#include <main.h>
+#include <stdio.h>
+#include "main.h"
 
 /**
+ * main - putchar
  *
- *
- *
- *
+ * Return: zero
  **/
 
-int msin(void)
+int main(void)
 {
-
-
+	_putchar(0)
 }
