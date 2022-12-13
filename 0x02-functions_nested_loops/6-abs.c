@@ -1,29 +1,28 @@
 #include "main.h"
 
 /**
- * print_sign - determin sign of int
+ * abs -  abs main
  *
- * @n: number to check for sign
- * 
- * Return: 1 if positive, 0 if 0, and -1 if negative
+ * @i: inputd all
+ * @r: resulr
+ * Return: abs of a number
  **/
+int _abs(int i)
+{/* @r: internsl param */
+	int r;
 
-int print_sign(int n)
-{
-	if (n > 0)
+	if (i < 0)
 	{
-		_putchar('+');
-		return (1);
+		r = i * -1;
+		return (r);
 	}
-	else if (n == 0)
+	else if (i > 0)
 	{
-		_putchar('0');
-		return (0);
+		r = i * 1;
+		return (r);
 	}
 	else
 	{
-		_putchar('-');
-		return (-1);
+		return (i);
 	}
-
 }
