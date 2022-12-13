@@ -1,7 +1,7 @@
 #ifndef _main_h
 #define _main_h
 
-int -puchar(char);
+int _putchar(char);
 
 
 #endif	
