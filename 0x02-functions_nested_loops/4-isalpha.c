@@ -1,33 +1,31 @@
+#include "maon.h"
+
 /**
+ * _isalpha - returns 1 if c is a letter
  *
- *  * _isalpha - returns 1 if c is a letter
+ * @c: character to be checked if alpha
  *
- *   *
+ * Return: 1 if letter, 0 otherwise
  *
- *    * @c: character to be checked if alpha
- *
- *     *
- *
- *      * Return: 1 if letter, 0 otherwise
- *
- *       **/
+ **/
 
 
 
 int _isalpha(int c)
-
 {
+	if ((c <= 90) && (c >= 65))
+	{
+		return (1);
+	}
 
-		if ((c <= 90) && (c >= 65))
+	else if ((c >= 97) && (c <= 122))
+	{
+		return (1);
+	}
 
-					return (1);
-
-			else if ((c >= 97) && (c <= 122))
-
-						return (1);
-
-				else
-
-							return (0);
+	else
+	{
+		return (0);
+	}
 
 }
