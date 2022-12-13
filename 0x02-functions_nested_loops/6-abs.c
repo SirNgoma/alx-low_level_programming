@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * abs -  abs main
+ * _abs -  abs main
  *
  * @i: inputd all
  * @r: resulr
