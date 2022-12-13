@@ -1,33 +1,51 @@
-#include "main.h"
-
 /**
- *  * main - check the code.
+ *
+ *  * print_sign - determin sign of int
+ *
  *   *
- *    * Return: Always 0.
- *     */
-int main(void)
-{
-	int r;
+ *
+ *    * @n: number to check for sign
+ *
+ *     *
+ *
+ *      * Return: 1 if positive, 0 if 0, and -1 if negative
+ *
+ *       **/
 
-	r = print_sign(98);
-	_putchar(',');
-	_putchar(' ');
-	_putchar(r + '0');
-	_putchar('\n');
-	r = print_sign(0);
-	_putchar(',');
-	_putchar(' ');
-	_putchar(r + '0');
-	_putchar('\n');
-	r = print_sign(0xff);
-	_putchar(',');
-	_putchar(' ');
-	_putchar(r + '0');
-	_putchar('\n');
-	r = print_sign(-1);
-	_putchar(',');
-	_putchar(' ');
-	_putchar(r + '0');
-	_putchar('\n');
-	return (0);
+
+
+int print_sign(int n)
+
+{
+
+		if (n > 0)
+
+				{
+
+							_putchar('+');
+
+									return (1);
+
+										}
+
+			else if (n == 0)
+
+					{
+
+								_putchar('0');
+
+										return (0);
+
+											}
+
+				else
+
+						{
+
+									_putchar('-');
+
+											return (-1);
+
+												}
+
 }

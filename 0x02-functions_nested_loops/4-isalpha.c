@@ -1,22 +1,33 @@
-#include "main.h"
-
 /**
- *  * main - check the code.
+ *
+ *  * _isalpha - returns 1 if c is a letter
+ *
  *   *
- *    * Return: Always 0.
- *     */
-int main(void)
-{
-	int r;
+ *
+ *    * @c: character to be checked if alpha
+ *
+ *     *
+ *
+ *      * Return: 1 if letter, 0 otherwise
+ *
+ *       **/
 
-	r = _isalpha('H');
-	_putchar(r + '0');
-	r = _isalpha('o');
-	_putchar(r + '0');
-	r = _isalpha(108);
-	_putchar(r + '0');
-	r = _isalpha(';');
-	_putchar(r + '0');
-	_putchar('\n');
-	return (0);
+
+
+int _isalpha(int c)
+
+{
+
+		if ((c <= 90) && (c >= 65))
+
+					return (1);
+
+			else if ((c >= 97) && (c <= 122))
+
+						return (1);
+
+				else
+
+							return (0);
+
 }
