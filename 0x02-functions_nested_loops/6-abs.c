@@ -8,7 +8,7 @@
  * Return: abs of a number
  **/
 int _abs(int i)
-{/* @r: internsl param */
+{
 	int r;
 
 	if (i < 0)
@@ -18,8 +18,7 @@ int _abs(int i)
 	}
 	else if (i > 0)
 	{
-		r = i * 1;
-		return (r);
+		r = i * 1;return (r);
 	}
 	else
 	{
