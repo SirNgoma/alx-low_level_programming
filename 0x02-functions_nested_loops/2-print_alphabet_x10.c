@@ -23,8 +23,7 @@ void print_alphabet(void)
 
 
 /**
- *
- *  * print_alphabet_x10 - prints aphabet 10 times
+ * print_alphabet_x10 - prints aphabet 10 times
  *
  * Return: Something
  *
