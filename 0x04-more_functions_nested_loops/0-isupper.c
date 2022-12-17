@@ -3,7 +3,7 @@
 
 /**
  * _isupper - check the code.
- *
+ * @c: parameter
  * Return: Always 0.
  **/
 
