@@ -8,7 +8,7 @@
  * Return: nothing.
  **/
 
-void swap_to_98(int m)
+void swap_to_98(int *n)
 {
-	m = 98;
+	*n = 98;
 }
