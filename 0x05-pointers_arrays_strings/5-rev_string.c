@@ -18,7 +18,7 @@ void rev_string(char *s)
 	{
 		a++;
 	}
-	for ( a = 0; a > 0; a--)
+	for (; a > 0; a--)
 	{
 		arry[b] = s[a - 1];
 		b++;
