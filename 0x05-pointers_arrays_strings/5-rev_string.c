@@ -14,7 +14,7 @@ void rev_string(char *s)
 
 	char arry[1000];
 
-	while(s[a] != "\0")
+	while(s[a] != '\0')
 	{
 		a++;
 	}
