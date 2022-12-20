@@ -21,7 +21,5 @@ void print_array(int *a, int n)
 		}
 		printf("\n");
 	}
-	return (0);
-
 }
 
