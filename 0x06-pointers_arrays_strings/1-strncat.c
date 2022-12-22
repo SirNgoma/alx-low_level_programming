@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- *
- *
- *
- *
+ * strncat - join a strnig
+ *@n : num of strin
+ *@dest: ddsxvg
+ @src: souredd
+ *Return none
  **/
 
 char *strncat(char *dest, char *src, int n)
