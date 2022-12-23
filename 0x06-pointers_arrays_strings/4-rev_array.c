@@ -14,16 +14,20 @@
 
 void reverse_array(int *a, int n)
 {
-	int hold, first, last;
+	int i, j, temp;
 
-	first = 0;
-	last = n - 1;
+	i = 0;
+	j = n - 1;
 
-	for (first = 0; first < last; first++, last--)
+	while (i < j)
 	{
-		hold = *(a + first);
-		*(a + first) = *(a + last);
-		*(a + last) = hold;
+		temp = a[i];
+		a[i] = a[j];
+		a[j] = temp;
+
+		i++;
+	
+		j--;
 	}
 
 }
