@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *
- *
- *
+ * string_toupper - upprcase thevsyring
+ * @s: string to b used
+ * Return: zero
  **/
 
 char *string_toupper(char *s)

@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- *
- *
- *
+ * _strcmp - chrc code
+ * @s1: str one
+ * @s2: strctwo
+ * Return: zero
  **/
 
 int _strcmp(char *s1, char *s2)

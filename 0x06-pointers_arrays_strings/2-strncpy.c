@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- *
- *
- *
+ * _strncpy - copies
+ * @dest : st 1
+ * @src: second one
+ * @n : third one
+ * Return: none
  **/
 
 char *_strncpy(char *dest, cahr *src, int n)

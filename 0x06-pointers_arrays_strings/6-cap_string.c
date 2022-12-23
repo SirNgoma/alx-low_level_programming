@@ -23,7 +23,7 @@ char *cap_string(char *s)
 		{
 			for (k =0; s[k] != '\0'; k++)
 			{
-				if (s[j] - 1] == a[k])
+				if (s[j] - 1 == a[k])
 				{
 					i  = 1;
 					break;

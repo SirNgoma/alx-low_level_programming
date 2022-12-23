@@ -2,28 +2,31 @@
 
 /**
  * strncat - join a strnig
- *@n : num of strin
- *@dest: ddsxvg
- @src: souredd
- *Return none
+ * @n : num of strin
+ * @dest: ddsxvg
+ * @src: souredd
+ * Return: none
  **/
 
 char *strncat(char *dest, char *src, int n)
 {
-	char *i = dest;
+	int i, j;
 
-	while (*dest != '\0')
+	i = 0;
+	j = 0;
+
+	while ((*dest + i) != '\0')
 	{
-		dest++;
+		i++;
+		j++;
 	}
-
-	while ((*src != '\0') && n--)
+	i = 0;
+	while ((*src + i) != src[n])
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		dest[j] = src[i];
+		i++;
+		j++;
 	}
-
-	*dest = '\0';
-	return (i);
+	dest[j] = '\0';
+	return (dest);
 }

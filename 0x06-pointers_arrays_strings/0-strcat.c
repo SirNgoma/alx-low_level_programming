@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- *
- *
- *
- *
+ * *_strcat - conc a strung
+ * @dest: string 1
+ * @src: string 2
+ * Return: none
  **/
 
 char *_strcat(char *dest, char *src)
