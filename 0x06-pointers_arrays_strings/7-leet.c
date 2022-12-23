@@ -3,7 +3,7 @@
 
 /**
  * leet - replace char wit ont
- * @*: string
+ * @s: string
  * Return: Zero
  **/
 

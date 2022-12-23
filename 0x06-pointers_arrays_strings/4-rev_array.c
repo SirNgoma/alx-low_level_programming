@@ -2,7 +2,6 @@
 #include <stdio.h>
 
 /**
- *
  * reverse_array - reverses an array
  *
  * @a: first pointer parameter
@@ -26,7 +25,7 @@ void reverse_array(int *a, int n)
 		a[j] = temp;
 
 		i++;
-	
+
 		j--;
 	}
 
