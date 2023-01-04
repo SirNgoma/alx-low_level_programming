@@ -4,6 +4,7 @@
  * _strchr - locates a ch in a string
  * @s: string
  * @c: char
+ * Description: same as function
  * Return: zero
  **/
 

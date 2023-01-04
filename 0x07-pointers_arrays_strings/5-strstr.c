@@ -2,7 +2,6 @@
 #include <stdio.h>
 
 /**
- *
  * _strstr -  finds a substring
  *
  * @haystack: first parameter
@@ -14,43 +13,25 @@
  **/
 
 char *_strstr(char *haystack, char *needle)
-
 {
+	while (*haystack)
+	{
+		char *fst_string = haystack;
+	
+		char *second_string = needle;
 
-		while (*haystack)
+		while (*haystack && *second_string && *haystack == *second_string)
+		{
+			haystack++;
 
-				{
-
-							char *fst_string = haystack;
-
-									char *secnd_string = needle
-
-
-
-													while (*haystack && *secnd_string && *haystack ==
-
-																		       *secnd_string)
-
-																	{
-
-																						haystack++;
-
-																										secnd_string++;
-
-																													}
-
-												if (!*secnd_string)
-
-																{
-
-																					return (fst_string);
-
-																								}
-
-															haystack = fst_string + 1;
-
-																}
-
-			return (NULL);
+			second_string++;
+		}
+		if (!*second_string)
+		{
+			return (fst_string);
+		}
+		haystack = fst_string + 1;
+	}
+	return (NULL);
 
 }

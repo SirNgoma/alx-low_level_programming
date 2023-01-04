@@ -4,14 +4,13 @@
 
 
 /**
- *
  * print_diagsums - print sum of diagonal values in a square array
  *
  * @a: array of values
  *
  * @size: size of array
  *
- *
+ *Description: same as the function
  * Return: nothing
  *
  **/
@@ -40,5 +39,4 @@ void print_diagsums(int *a, int size)
 			sum2 += a[y * size + (size - y - 1)];
 		}
 		printf("%d, %d\n", sum1, sum2);
-
 }
