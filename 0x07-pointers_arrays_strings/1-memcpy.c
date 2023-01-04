@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * _memcpy - copy char*
  * @dest: 1st pointer

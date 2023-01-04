@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * _memset - replace ch with byte
  * @s: memory address of s
