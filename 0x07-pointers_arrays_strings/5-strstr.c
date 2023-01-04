@@ -1,23 +1,17 @@
-
-
-
-
+#include "main.h"
+#include <stdio.h>
 
 /**
  *
- *  * _strstr -  finds a substring
+ * _strstr -  finds a substring
  *
- *   * @haystack: first parameter
+ * @haystack: first parameter
  *
- *    * @needle: second parameter
+ * @needle: second parameter
  *
- *     *
+ * Return: Always(0) Success
  *
- *      * Description:  locates a substring
- *
- *       * Return: Always(0) Success
- *
- *        */
+ **/
 
 char *_strstr(char *haystack, char *needle)
 
