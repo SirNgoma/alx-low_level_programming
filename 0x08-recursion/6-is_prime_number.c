@@ -3,28 +3,22 @@
 
 /**
  *
- *  * is_divisible - checks if a number divisible.
+ * is_divisible - checks if a number divisible.
  *
- *   * @number: The number to be checked.
+ * @number: The number to be checked.
  *
- *    * @div: The divisor.
+ * @div: The divisor.
+ * Return:  0(if num is divisible)
  *
- *     *
- *
- *      * Return:  0(if num is divisible)
- *
- *       *          1(not divisible).
- *
- *        */
+ *  1(not divisible).
+ **/
 
 int is_divisible(int number, int div)
-
 {
-
-		if (number % div == 0)
-
-					return (0);
-
+	if (number % div == 0)
+	{
+		return (0);
+	}
 
 
 			if (div == number / 2)
