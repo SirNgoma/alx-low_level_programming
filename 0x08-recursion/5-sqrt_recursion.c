@@ -9,7 +9,6 @@
  * Return: zero
  *
  **/
- 
 
 int sqr_con(int n, int i)
 {
