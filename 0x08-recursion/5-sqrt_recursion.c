@@ -5,6 +5,7 @@
  * sqr_con - squ root
  * @n: int 1
  * @i: int 2
+ * Description: sameas fun
  * Return: zero
  *
  **/
@@ -27,7 +28,6 @@ int sqr_con(int n, int i)
 
 
 /**
- *
  * _sqrt_recursion - find natural square root of n
  *
  * @n: number to square

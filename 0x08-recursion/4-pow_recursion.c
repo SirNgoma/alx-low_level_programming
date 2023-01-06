@@ -2,7 +2,6 @@
 #include <stdio.h>
 
 /**
- *
  * _pow_recursion - returns x raised to power y.
  *
  * @x: number.
@@ -12,7 +11,6 @@
  * Description: returns the power of a number
  *
  * Return: the value of x raised to the power of y.
- *
  **/
 
 

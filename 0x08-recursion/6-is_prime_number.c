@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- *
  * is_divisible - checks if a number divisible.
  *
  * @number: The number to be checked.
  *
  * @div: The divisor.
+ * Description: same as fun
  * Return:  0(if num is divisible)
  *
  *  1(not divisible).
@@ -32,10 +32,10 @@ int is_divisible(int number, int div)
 
 
 /**
- *
  * is_prime_number - Checks if a number is prime.
  *
  * @n: The number to be checked.
+ * Description: same as fun
  * Return: int
  *
  **/
