@@ -6,6 +6,7 @@
  * **alloc_grid - returns a pointer
  * @width: width of the grid
  * @height: height of the grid
+ * Description: check above
  * Return: Zero
  **/
 
@@ -18,13 +19,17 @@ int **alloc_grid(int width, int height)
 
 
 	if (width <= 0 || height <= 0)
+	{
 
 		return (NULL);
+	}
 
 	grid = (int **)malloc(height * sizeof(int *));
 
 	if (grid == NULL)
+	{
 		return (NULL);
+	}
 	for (x = 0; x < height; x++)
 	{
 		grid[x] = (int *)malloc(width * sizeof(int));

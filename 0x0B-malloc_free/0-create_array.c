@@ -5,6 +5,7 @@
  * create_array: create a arry of chars
  * @size: size of array
  * @c: char
+ * Description: check above
  * Return: Zero
  **/
 

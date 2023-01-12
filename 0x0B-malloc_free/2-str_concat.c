@@ -1,4 +1,13 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * _strlen - check len
+ * @s: string
+ * Description: check len
+ * Return: zero
+ **/
 
 
 
