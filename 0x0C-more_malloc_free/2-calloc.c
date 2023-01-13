@@ -12,38 +12,26 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	char *index;
 
+	unsigned int x;
 
-		char *index;
+	if (nmemb == 0 || size == 0)
+	{
+		return (NULL);
+	}
 
-			unsigned int x;
+	index = malloc(nmemb * size);
 
+	if (index == NULL)
+	{
+		return (NULL);
+	}
 
-
-				if (nmemb == 0 || size == 0)
-
-							return (NULL);
-
-
-
-					index = malloc(nmemb * size);
-
-
-
-						if (index == NULL)
-
-									return (NULL);
-
-
-
-							for (x = 0; x < (nmemb * size); x++)
-
-									{
-
-												index[x] = 0;
-
-													}
-
-								return (index);
+	for (x = 0; x < (nmemb * size); x++)
+	{
+		index[x] = 0;
+	}
+	return (index);
 
 }
