@@ -1,24 +1,25 @@
 #ifndef MAIN_H
 #define MAIN_H
-int _putchar(char c);
 
-int _islower(int c);
+int _putchar(char);
 
-int _isalpha(int c);
+int _islower(int);
 
-int _abs(int n);
+int _isalpha(int);
 
-int _isupper(int c);
+int _abs(int);
 
-int _isdigit(int c);
+int _isupper(int);
 
-int _strlen(char *s);
+int _isdigit(int);
 
-void _puts(char *s);
+int _strlen(char);
 
-char *_strcpy(char *dest, char *src);
+void _puts(char);
 
-int _atoi(char *s);
+char *_strcpy(char *dest, char *src, int n);
+
+int _atoi(char);
 
 char *_strcat(char *dest, char *src);
 
