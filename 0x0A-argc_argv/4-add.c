@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - multiply two numbers
@@ -22,7 +23,7 @@ int main(int argc, char *argv[])
 
 	char *s2 = argv[2];
 
-	0num1 = num2 = 0;
+	num1 = num2 = 0;
 
 	if (argc != 3)
 	{
