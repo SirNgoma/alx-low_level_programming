@@ -1,31 +1,26 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
+ * main - print number of arguments entered
  *
- *  * main - print number of arguments entered
+ * @argc: number of arguments
  *
- *   * @argc: number of arguments
+ * @argv: arguments entered
  *
- *    * @argv: arguments entered
+ * Description: chech function name
  *
- *     * Description: print number of arguments
- *
- *      * Return: return zero
- *
- *       **/
+ * Return: return zero
+ **/
 
 
 
 int main(int argc, char *argv[])
-
 {
+	printf("%d\n", argc - 1);
 
-		printf("%d\n", argc - 1);
+	argv = argv;
 
-			argv = argv;
-
-
-
-				return (0);
+	return (0);
 
 }
