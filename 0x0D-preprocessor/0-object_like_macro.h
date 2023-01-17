@@ -1,4 +1,6 @@
-#include <stdio.h>
+#ifndef FIL
+#define FIL
 
-#define SIZE 1024
+SIZE 1024
 
+#endif
