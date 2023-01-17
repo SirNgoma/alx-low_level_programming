@@ -1,16 +1,13 @@
-#ifndef DOG
-#define DOG
+#include <stdio.h>
 
 /**
- * struct dog - Di
- * @name: name
- * @age: age
- * @owner: owner
+ * dog - Dog Struct
+ * Retun : zero
  **/
 
-typedef struct dog {
+struct dog
+{
 	char *name;
 	float age;
 	char *owner;
 };
-
