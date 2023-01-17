@@ -1,22 +1,15 @@
 #include "dog.h"
-
 #include <stdio.h>
-
 #include <stdlib.h>
 
 /**
+ * _strdup - Pointer to a newly allocated space in memory
  *
- *  * _strdup - Pointer to a newly allocated space in memory
+ * @str: first parameter
+ * Description: check funct
  *
- *   * @str: first parameter
- *
- *    *
- *
- *     * Description: duplicates
- *
- *      * Return: Always(0) Success
- *
- *      */
+ * Return: Always(0) Success
+ **/
 
 char *_strdup(char *str)
 {
@@ -26,62 +19,40 @@ char *_strdup(char *str)
 
 	int len;
 
-
-
-					for (len = 0; str[len] != '\0'; len++)
-
-							{
-
-									}
+	for (len = 0; str[len] != '\0'; len++)
+	{}
 
 
 
-						space = (char *) malloc(sizeof(char) * len + 1);
+	space = (char *) malloc(sizeof(char) * len + 1);
 
 
 
-							if (space == NULL)
+	if (space == NULL)
+	{
+		return (NULL);
+	}
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+	new_string = space;
 
-										return (NULL);
+	while (*str)
+	{
+		*new_string = *str;
+		new_string++;
+		str++;
+	}
 
+	*new_string = '\0';
 
-
-								if (str == NULL)
-
-											return (NULL);
-
-
-
-
-
-									new_string = space;
-
-
-
-										while (*str)
-
-												{
-
-															*new_string = *str;
-
-																	new_string++;
-
-																			str++;
-
-																				}
-
-											*new_string = '\0';
-
-
-
-												return (space);
-
+	return (space);
 }
 
 
 
 /**
- *
  *  * new_dog - Initialize a variable of type struct dog
  *
  *   * @name: Name of the dog
@@ -96,64 +67,47 @@ char *_strdup(char *str)
  *
  *        * Return: Always(0) Success
  *
- *         */
+ **/
 
 dog_t *new_dog(char *name, float age, char *owner)
-
 {
 
-		dog_t *newdog;
+	dog_t *newdog;
 
-			char *nameCopy;
+	char *nameCopy;
 
-				char *ownerCopy;
-
-
-
-					newdog = malloc(sizeof(struct dog));
+	char *ownerCopy;
 
 
 
-						if (newdog == NULL)
+	newdog = malloc(sizeof(struct dog));
 
-								{
+	if (newdog == NULL)
+	{
+		return (NULL);
+	}
 
-											return (NULL);
+	nameCopy = _strdup(name);
 
-												}
-
-
-
-							nameCopy = _strdup(name);
-
-								ownerCopy = _strdup(owner);
+	ownerCopy = _strdup(owner);
 
 
 
-									if (nameCopy == NULL || ownerCopy == NULL)
+	if (nameCopy == NULL || ownerCopy == NULL)
+	{
+		return (NULL);
+	}
 
-											{
+	(*newdog).name = nameCopy;
 
-														return (NULL);
+	(*newdog).age = age;
 
-															}
+	(*newdog).owner = ownerCopy;
 
-
-
-										(*newdog).name = nameCopy;
-
-											(*newdog).age = age;
-
-												(*newdog).owner = ownerCopy;
-
-
-
-													if (newdog == NULL)
-
-																return (NULL);
-
-
-
-														return (newdog);
+	if (newdog == NULL)
+	{
+		return (NULL);
+	}
+	return (newdog);
 
 }
