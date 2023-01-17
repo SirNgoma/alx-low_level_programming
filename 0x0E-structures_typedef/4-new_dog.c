@@ -19,14 +19,12 @@
  *      */
 
 char *_strdup(char *str)
-
 {
+	char *space;
 
-		char *space;
+	char *new_string;
 
-			char *new_string;
-
-				int len;
+	int len;
 
 
 
