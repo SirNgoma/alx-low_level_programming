@@ -1,6 +1,6 @@
-#ifndef ABS
-#define ABS
+#ifndef _ABS
+#define _ABS
 
-#define ABS(x) (abs(x))
+#define ABS(x) (x*((2*x+1)%2))
 
 #endif
