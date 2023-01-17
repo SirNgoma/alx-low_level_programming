@@ -1,10 +1,7 @@
-#ifndef DOG
-#define DOG
+#ifndef _DOG
+#define _DOG
 
-/**
- * dog - Dog Struct
- * Retun : zero
- **/
+
 
 struct dog
 {
