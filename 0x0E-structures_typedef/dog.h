@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-/**
+/*
  * dog - Dog Struct
  * Retun : zero
- **/
+ */
 
 struct dog
 {
