@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include "dog.h"
 
 /**
@@ -8,22 +8,22 @@
  * @age: age
  * @owner: owner
  * Description: chech the above
- * Return: Zero
+ * Return: Zerio
  **/
 
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	struct dog *my_dog;
+	//struct dog *my_dog;
 
-	my_dog = malloc(sizeof(struct dog));
-	if (my_dog == NUL)
+	//my_dog = malloc(sizeof(struct dog));
+	if (d == NUL)
 	{
 		return (NULL);
 	}
-	my_dog->name = name;
-	my_dog->age = age;
-	my_dog->owner = owner;
+	d->name = name;
+	d->age = age;
+	d->owner = owner;
 
-	return my_dog;
+	//return d;
 }
