@@ -5,18 +5,16 @@
 
 
 /**
+ * int_index - search for int using cmp
  *
- *  * int_index - search for int using cmp
+ * @array: array to operate on
  *
- *   * @array: array to operate on
+ * @size: size of array
  *
- *    * @size: size of array
+ * @cmp: compare function
  *
- *     * @cmp: compare function
- *
- *      * Return: nothing
- *
- *       **/
+ * Return: nothing
+ **/
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
