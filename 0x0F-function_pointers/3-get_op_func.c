@@ -1,3 +1,6 @@
+#include <stddef.h>
+#include "3-get_op_func.c"
+#include "3-calc.h"
 #include "function_pointers.h"
 
 
@@ -8,7 +11,6 @@
  * @s: string
  *
  * Return: pointer to function, NULL if fails
- *
  **/
 
 int (*get_op_func(char *s))(int, int)
