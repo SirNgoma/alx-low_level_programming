@@ -13,19 +13,17 @@
  * @cmp: compare function
  *
  * Return: nothing
- *
  **/
 
 int main(int ac, char *argv[])
 {
 	int num1, num2;
 
-	char* operator;
+	char *operator;
 
-	
 	if (ac != 4)
 	{
-		printf("Error\n");
+		printf(2"Error\n");
 		exit(98);
 	}
 
@@ -37,7 +35,7 @@ int main(int ac, char *argv[])
 
 	if (atoi(argv[2]) == NULL || atoi(argv[4]) == NULL)
 	{
-		printf ("Error\n");
+		printf("Error\n");
 		exit();
 	}
 
