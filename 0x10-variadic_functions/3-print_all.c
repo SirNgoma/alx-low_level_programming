@@ -97,25 +97,19 @@ void print_f(va_list list, char *sep)
 void print_all(const char * const format, ...)
 {
 	va_list list;
-
 	int i, j;
-
 	char *separator;
 
 	type_t ops[] = {
 		{"c", print_c},
 		{"i", print_i},
 		{"f", print_f},
-
 		{"s", print_s},
-
 		{NULL, NULL}
 	};
 
 	va_start(list, format);
-
 	i = 0;
-
 	separator = "";
 
 	while (format != NULL && format[i] != '\0')
@@ -128,13 +122,11 @@ void print_all(const char * const format, ...)
 			{
 				ops[j].f(list, separator);
 				separator = ", ";
-
 			}
 			j++;
 		}
 		i++;
 	}
 	printf("\n");
-
 	va_end(list);
 }
