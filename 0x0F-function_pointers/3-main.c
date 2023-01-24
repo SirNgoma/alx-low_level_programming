@@ -23,7 +23,7 @@ int main(int ac, char *argv[])
 
 	if (ac != 4)
 	{
-		printf(2"Error\n");
+		printf("Error\n");
 		exit(98);
 	}
 
