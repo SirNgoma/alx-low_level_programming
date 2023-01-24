@@ -15,26 +15,19 @@ void print_all(const char * const format, ...);
 
 
 /**
+ * type - Struct data type
+ * @op: data type argument
  *
- *  * struct type - Struct data type
- *
- *   *
- *
- *    * @op: data type argument
- *
- *     * @f: The function associated
- *
- *      */
+ * @f: The function associated
+ * Description: chech dataa
+ **/
 
 
 
 typedef struct type
-
 {
-
-		char *op;
-
-			void (*f)(va_list, char *);
+	char *op;
+	void (*f)(va_list, char *);
 
 } type_t;
 

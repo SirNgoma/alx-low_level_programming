@@ -5,51 +5,47 @@
 
 
 /**
- * main -
+ * main - main function
  *
- * @array: array to operate on
+ * @argc: num of arg
  *
- * @size: size of array
- *
- * @cmp: compare function
+ * @argv: array to arg
  *
  * Return: nothing
  **/
 
-int main(int ac, char *argv[])
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 	int num1, num2;
 
-	char *operator;
+	char *op;
 
-	if (ac != 4)
+	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
 
-	if (argv[3] != '+')
+	num1 = atoi(argv[1]);
+
+	op = argv[2];
+
+	num2 = atoi(argv[3]);
+
+	if (get_op_func(op) == NULL || op[1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	if (atoi(argv[2]) == NULL || atoi(argv[4]) == NULL)
+	if ((*op == '/' && num2 == 0) || 
+	(*op == '%' && num2 == 0))
 	{
 		printf("Error\n");
-		exit();
+		exit(100);
 	}
 
-	num1 = atoi(argv[2]);
-
-	num2 = atoi(argv[4]);
-
-	operator = argv[3];
-
-	calc = get_op_func(operator, num1, num2);
-
-	printf("%d\n", calc);
+	printf("%d\n", get_op_func(op)(num1, num2));
 
 	return (0);
-
 }
