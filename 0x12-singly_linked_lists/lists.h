@@ -49,7 +49,7 @@ void free_list(list_t *head);
 
                                                                                                                                                        
 
-typedef struct list_s                                                                                                                                  
+typedef struct list_s
 {
 	char *str;                                                                                                                                     
 
