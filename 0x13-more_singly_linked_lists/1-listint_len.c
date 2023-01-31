@@ -1,5 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
+#include <stdlib.h>
+#include <stddef.h>
 
 /**
  * listint_len - prinys num of nodes
