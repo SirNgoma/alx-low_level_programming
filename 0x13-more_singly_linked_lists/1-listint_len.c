@@ -5,7 +5,7 @@
 
 /**
  * listint_len - prinys num of nodes
- * @n: listint poiter
+ * @h: listint poiter
  * Return: num of nodes
  **/
 
@@ -17,7 +17,7 @@ size_t listint_len(const listint_t *h)
 	{
 		return (0);
 	}
-	for (i = 0; h ! = NULL)
+	for (i = 0; h != NULL)
 	{
 		h = h->next;
 	}

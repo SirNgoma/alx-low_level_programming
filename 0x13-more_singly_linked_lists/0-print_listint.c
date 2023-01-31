@@ -5,7 +5,7 @@
 
 /**
  * print_listint - prints all elements
- * @n: listint_t pointer
+ * @h: listint_t pointer
  * Return: num of nodes
  **/
 
