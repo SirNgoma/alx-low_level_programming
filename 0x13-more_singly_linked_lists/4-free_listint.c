@@ -12,10 +12,14 @@ void free_listint(listint_t *head)
 {
 	listint_t *friend;
 
-	while (head != NULL)
+	if (head == NULL)
+		return;
+
+	while (head->next != NULL)
 	{
-		friend = head->next;
+		tmp = head->next;
 		free(head);
-		head = friend;
+		head = tmp;
 	}
+	free(head);
 }

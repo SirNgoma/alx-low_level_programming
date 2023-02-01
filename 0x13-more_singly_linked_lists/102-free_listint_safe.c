@@ -12,7 +12,7 @@
 
 size_t free_listint_safe(listint_t **h)
 {
-	listint_t *friend, start;
+	listint_t *fee, start;
 
 	size_t i;
 
@@ -20,11 +20,11 @@ size_t free_listint_safe(listint_t **h)
 
 	for (i = 0; head != NULL && head != start; i++)
 	{
-		friend = head->next;
+		fee = head->next;
 
 		free(head);
 
-		head = friend;
+		head = fee;
 	}
 	return (i);
 }
