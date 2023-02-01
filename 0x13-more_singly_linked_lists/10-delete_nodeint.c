@@ -10,7 +10,7 @@
  * @head: pointer to head of list
  *
  * @index: index of node
- *
+ * Description: check func
  * Return: 1 if succeeds, -1 if failed
  **/
 
@@ -50,6 +50,6 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	if (index == 0)
 	{
 		head = &prior;
-		return (1);
 	}
+	return (1);
 }

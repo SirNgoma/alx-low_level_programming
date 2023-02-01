@@ -4,6 +4,7 @@
 /**
  * freelist_int - free list int list
  * @head: adress of head
+ * Description: check the func
  * Return: nothing
  **/
 
