@@ -11,8 +11,7 @@ int write_to_file(char *buff, int to_fd, int read_chars, char *f_to);
  *
  * @argc: Count of the arguments to start the program.
  * @argv: An array of strings containing the arguments passed to the program.
- * Description: The overall goal of this program is to copy the contents of a
-  file FILE_FROM to a file FILE_TO. Usage ./cp FILE_FROM FILE_TO.
+ * Description: The overall goal of this program is FILE_FROM FILE_TO.
  *
  * Return: Always zero, but It will have exit 97 when there it does not have
  *  the right number of parameters, 98 when it can not read / open
