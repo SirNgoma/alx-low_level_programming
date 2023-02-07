@@ -10,16 +10,24 @@
 
 size_t print_list(const list_t *h)
 {
+	int i;
 
 	if (h == NULL)
 	{
 		return (0);
 	}
-	printf("[%u] %s\n", h->len, h->str);
-
-	if (h->next != NULL)
+	for (i = 1; h->next != NULL; i++)
 	{
-		return (print_list(h->next) + 1);
+		if (h->str == NULL)
+		{
+			printf("[%u] %s\n", h->len, "(nil)");
+		}
+		else
+		{
+			printf("[%u] %s\n", h->len, h->str);
+		}
+		h = h->next;
 	}
-	return (1);
+	printf("[%u] %s\n", h->len, h->str);
+	return (i);
 }
