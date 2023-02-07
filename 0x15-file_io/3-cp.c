@@ -63,7 +63,7 @@ int open_files(char *f_from, char *f_to)
 
 	if (from_fd == -1)
 	{
-		dprintf(STDERR_FILENO,"Error: Can't read from file %s\n", f_from);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", f_from);
 		exit(98);
 	}
 
@@ -76,7 +76,7 @@ int open_files(char *f_from, char *f_to)
 
 		if (to_fd == -1)
 		{
-			dprintf(STDERR_FILENO,"Error: Can't write to %s\n", f_to);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", f_to);
 			exit(99);
 		}
 	}
@@ -121,7 +121,7 @@ int read_files(int from_fd, int to_fd, char *f_from, char *f_to)
 
 	if (read_chars == -1)
 	{
-		dprintf(STDERR_FILENO,"Error: Can't read from file %s\n", f_from);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", f_from);
 		exit(98);
 	}
 
@@ -132,7 +132,7 @@ int read_files(int from_fd, int to_fd, char *f_from, char *f_to)
 
 	if (read_chars == -1)
 	{
-										dprintf(STDERR_FILENO,"Error: Can't read from file %s\n", f_from);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", f_from);
 
 	exit(98);
 	}
@@ -169,7 +169,7 @@ int write_to_file(char *buff, int to_fd, int read_chars, char *f_to)
 	{
 		if (write(to_fd, &buff[i], 1) == -1)
 		{
-			dprintf(STDERR_FILENO,"Error: Can't write to %s\n", f_to);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", f_to);
 			exit(99);
 		}
 	}
