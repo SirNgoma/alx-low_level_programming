@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+unsigned int length(char *s1);
+
 /**
  * string_nconcat - concanates two strings
  * @s1: str 1
