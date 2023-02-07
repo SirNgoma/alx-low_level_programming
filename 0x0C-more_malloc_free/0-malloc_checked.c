@@ -4,15 +4,21 @@
 
 /**
  * malloc_checked - allocate memory
- * @b: integer
+ * @b: in to be2 alloc
  * Description: above
  * Return: zero
  **/
 
 void *malloc_checked(unsigned int b)
 {
-	int* allocated = malloc(b * sizeof(int));
+	void *h_array;
 
-	_putchar("%d", &allocated);
-	return (0);
+	h_array = malloc(b);
+
+	if (h_array == NULL)
+	{
+		exit(98);
+	}
+
+	return (h_array);
 }
