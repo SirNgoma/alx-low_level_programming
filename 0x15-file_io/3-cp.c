@@ -43,8 +43,6 @@ int main(int argc, char **argv)
 
 }
 
-
-
 /**
  *   open_files - Opens the files necessary for copying contents.
  *
@@ -128,8 +126,8 @@ int read_files(int from_fd, int to_fd, char *f_from, char *f_to)
 	}
 
 	write_to_file(buff, to_fd, read_chars, f_to);
-	hile (read_chars != 0)
-{ 
+	while (read_chars != 0)
+	{
 	read_chars = read(from_fd, buff, 1024);
 
 	if (read_chars == -1)
@@ -143,28 +141,23 @@ int read_files(int from_fd, int to_fd, char *f_from, char *f_to)
 		return (0);
 
 	write_to_file(buff, to_fd, read_chars, f_to);
-}
-return (0);
+	}
+	return (0);
 
 }
-
-
 
 /**
+ * write_to_file - Writes to a file TO_FILE.
  *
- *  * write_to_file - Writes to a file TO_FILE.
+ * @buff: An array of characters containing up to 1024 chars.
  *
- *   * @buff: An array of characters containing up to 1024 chars.
+ * @to_fd: File descriptor of file TO_FILE.
  *
- *    * @to_fd: File descriptor of file TO_FILE.
+ *  @read_chars: A number representing how many charac be written.
  *
- *     * @read_chars: A number representing how many characters were read and need to
+ *   @f_to: Name of the file FILE_TO.
  *
- *      * be written.
- *
- *       * @f_to: Name of the file FILE_TO.
- *
- *        * Return: Always Zero. Exit 99.
+ *   Return: Always Zero. Exit 99.
  */
 
 int write_to_file(char *buff, int to_fd, int read_chars, char *f_to)
