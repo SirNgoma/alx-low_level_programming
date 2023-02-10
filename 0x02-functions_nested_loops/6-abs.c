@@ -4,7 +4,6 @@
  * _abs -  abs main
  *
  * @i: inputd all
- * @r: resulr
  * Return: abs of a number
  **/
 int _abs(int i)
