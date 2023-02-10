@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints the sizetypes on the com it is compiled and run on
+ * main - prints the sizetypes
  * Description : check above
  * Return: Zero
  */
