@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- * main - prints the size of various types on the computer it is compiled and run on
+ * main - prints the sizetypes on the com it is compiled and run on
  * Description : check above
  * Return: Zero
  */
 
-int main (void)
+int main(void)
 {
 	printf("Size of a char: %d byte(s)\n", sizeof(char));
 	printf("Size of a int: %d byte(s)\n", sizeof(int));
