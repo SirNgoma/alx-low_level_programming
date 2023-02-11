@@ -34,24 +34,22 @@ int **alloc_grid(int width, int height)
 	{
 		grid[x] = (int *)malloc(width * sizeof(int));
 
-		if (grid[x] == NULL);
+		if (grid[x] == NULL)
+		{
+			for (y = 0; y <= x; y++)
+			{
+				free(grid[y]);
+			}
+			free(grid);
+			return (NULL);
+		}
 	}
-	for (y = 0; y <= x; y++)
-		free(grid[y]);
-	free(grid);
-
-	return (NULL);
-}}
-
-
-
 	for (y = 0; y < height; y++)
-
-				
-
-												for (x = 0; x < width; x++){
-													grid[y][x] = 0;
-												}
-													}}
-return (grid);
+	{
+		for (x = 0; x < width; x++)
+		{
+			grid[y][x] = 0;
+		}
+	}
+	return (grid);
 }
