@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
- * void print_triangle(int size) - print triangle
+ * print_triangle - print triangle
  * @size: size of the triangle
+ * Description: check above function
  * Return: zero
  **/
 
