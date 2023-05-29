@@ -1,1 +1,5 @@
-all: school.c
+CC = gcc
+CC = ${CC}
+
+all: main.c school.c
+	${CC} main.c school.c -o school
