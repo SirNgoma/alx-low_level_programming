@@ -1,5 +1,2 @@
-CC = gcc
-CC = ${CC}
-
 all: main.c school.c
-	${CC} main.c school.c -o school
+	gcc main.c school.c -o school
